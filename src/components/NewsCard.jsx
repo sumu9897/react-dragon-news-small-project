@@ -14,7 +14,7 @@ const NewsCard = (props ={}) => {
   } = news;
 
   return (
-    <div className="max-w-md mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+    <div className="mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
       <div className="p-4 flex items-center justify-between">
         <div className="flex items-center space-x-3">
           <img
@@ -37,7 +37,7 @@ const NewsCard = (props ={}) => {
         {title}
       </h2>
 
-      <img src={thumbnail_url} alt="News Thumbnail" className="w-full h-48 object-cover" />
+      <img src={thumbnail_url} alt="News Thumbnail" className="w-full object-cover" />
 
       <div className="p-4 text-gray-600 text-sm">
         <p>
