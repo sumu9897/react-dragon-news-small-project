@@ -57,11 +57,11 @@ const NewsCard = (props ={}) => {
         </div>
       </div>
 
-      {is_trending && (
+      {/* {is_trending && (
         <div className="absolute top-4 right-4 bg-red-500 text-white px-2 py-1 rounded-md text-xs">
           Trending
         </div>
-      )}
+      )} */}
     </div>
   );
 };
