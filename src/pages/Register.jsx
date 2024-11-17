@@ -19,25 +19,25 @@ const Register = () => {
         const email = form.get("email");
         const photo = form.get("photo");
         const password = form.get("password");
-    console.log({name, email,photo,password})
+    //console.log({name, email,photo,password})
 
     createNewUser(email,password)
     .then((result) =>{
         const user = result.user;
         setUser(user);
-        console.log(user);
+        //console.log(user);
         navigate(location?.state ? location.state : "/")
         updateUserProfile({displayName:name , photoURL:photo})
         .then(() =>{
             navigate("/");
         }).catch((err)=>{
-            console.log(err);
+            //console.log(err);
         })
     })
     .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
-        console.log(errorCode, errorMessage);
+        //console.log(errorCode, errorMessage);
         // ..
       });
     }
